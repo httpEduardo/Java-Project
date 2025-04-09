@@ -1,0 +1,1 @@
+Page<Product> findAllByNameContainingIgnoreCaseAndCategory_Id(String name, Long categoryId, Pageable pageable);

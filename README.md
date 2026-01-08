@@ -24,7 +24,7 @@ This is a Java-based product and category management system built with Spring Bo
 Before running this application, ensure you have the following installed:
 
 - **Java JDK 11 or higher** - [Download here](https://www.oracle.com/java/technologies/downloads/)
-- **MySQL 5.7 or higher** (or PostgreSQL 10+) - [Download MySQL](https://dev.mysql.com/downloads/)
+- **MySQL 8.0 or higher** (or PostgreSQL 10+) - [Download MySQL](https://dev.mysql.com/downloads/)
 - **Maven 3.6+** or **Gradle 6.0+** - For dependency management and building
 - **Git** - For cloning the repository
 
@@ -49,7 +49,7 @@ USE product_management;
 Run the SQL schema file to create the required tables:
 
 ```bash
-mysql -u your_username -p product_management < "CREATE TABLE category (.sql"
+mysql -u your_username -p product_management < CREATE\ TABLE\ category\ \(.sql
 ```
 
 Or manually execute the SQL commands:
@@ -172,7 +172,7 @@ gradle bootRun
 
 Or run the compiled JAR:
 ```bash
-java -jar target/java-project-1.0.0.jar
+java -jar target/<your-jar-file-name>.jar
 ```
 
 ### API Endpoints
